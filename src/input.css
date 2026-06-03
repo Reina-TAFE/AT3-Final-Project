@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@source "./index.html";
+@source "./phase-*/*.html";
+@source "./assets/img/*.png";
+@source "./assets/img/*.svg";
