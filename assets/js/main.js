@@ -1,12 +1,11 @@
 function expandSideNav(){
     const projectBtn = document.getElementById("projectsBtn_side")
     const projectsList = document.getElementById("sidebarCollapseList")
-    if (projectsList.className !== "overflow-hidden transition-[max-height] duration-300 ease-in-out max-h-0"){
-        projectsList.className = "overflow-hidden transition-[max-height] duration-300 ease-in-out max-h-0"
-        projectsList.style.maxHeight = "148px";
+    if (projectsList.className !== "dropdown-content flex flex-col gap-0.5 p-[2px] space-y-1 bg-[#271D4B]"){
+        projectsList.className = "dropdown-content flex flex-col gap-0.5 p-[2px] space-y-1 bg-[#271D4B]"
     }
     else {
-        projectsList.className = "hidden"
+        projectsList.className = "dropdown-content hidden p-[2px] space-y-1 bg-[#271D4B]"
     }
 }
 
