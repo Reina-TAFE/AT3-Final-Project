@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/site.css">
     <title>Reina Rowlands | Web Tech | Cert 4 Programming</title>
+<!--    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
     <script src="./assets/js/main.js"></script>
 </head>
-<body  id="wrapper" class="h-full w-full grid grid-rows-[80px_auto_auto] grid-cols-[auto_1fr] bg-[#d7d5ff]">
+<body  id="wrapper" class="min-h-screen min-w-screen grid grid-rows-[80px_1fr_10%] grid-cols-[auto_1fr] bg-[#d7d5ff]">
     <header class="row-1 col-span-full h-auto flex md:flex-row justify-between bg-[#190074]">
-        <h1 class="text-xl font-bold text-[#ffffff]">Reina Rowlands</h1>
+        <h1 class="text-xl font-bold font-inconsolata text-[#ffffff]">Reina Rowlands</h1>
         <nav id="header_nav" class="flex md-flex-col justify-evenly">
             <a href="index.html " class="text-l font-bold text-[#ffffff]">|| Home |</a>
             <a href="mywork.html" class="text-l font-bold text-[#ffffff]">| My Work |</a>
@@ -19,14 +20,14 @@
             <a href="contact.html" class="text-l font-bold text-[#ffffff]">| Contact ||</a>
         </nav>
     </header>
-    <aside class="row-2 col-0 w-64 bg-[#271D4B] text-white transition-all duration-300 border shadow-sm border-slate-200 shadow-slate-950/5
+    <aside id="side_panel" class="row-2 col-0 w-64 bg-[#271D4B] text-white transition-all duration-300 border shadow-sm border-slate-200 shadow-slate-950/5
 flex flex-col">
         <section class="p-4 flex justify-between items-center">
-            <h2 class="font-sans antialiased text-base font-semibold text-white">
+            <h2 id="aside_title" class="font-inconsolata antialiased text-base font-semibold text-white">
                 AT3 Final Project:<br>
                 Portfolio
             </h2>
-            <button id="collapse-btn" class="p-1 rounded-md hover:bg-gray-700 focus:outline-none">
+            <button id="collapse-btn" class="p-1 h-8 w-8 rounded-md !bg-[#E25600] hover:bg-gray-700 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
                 </svg>
@@ -38,7 +39,7 @@ flex flex-col">
                     <button id="projectsBtn_side" class="dropdown-btn w-full flex items-center justify-between
                     font-medium rounded-md text-gray-300 hover:bg-gray-700 hover:text-white bg-[#6D5AAE] space-y-1"
                     >
-                    <label class="sidebar-text" style="padding-left: 10px">Projects</label>
+                    <label class="sidebar-text font-inconsolata" style="padding-left: 10px">Projects</label>
                     <svg class="ml-auto h-5 w-5 transform transition-transform duration-200"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 20 20"
@@ -51,28 +52,28 @@ flex flex-col">
                     </button>
                     <ul id="sidebarCollapseList" class="dropdown-content hidden p-[2px] space-y-1 bg-[#271D4B]">
                         <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md
+                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                         focus:text-slate-800 dark:focus:text-white">Toy Store</a>
                         </li>
                         <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md
-                        align-middle select-none font-sans transition-all duration-300 ease-in bg-transparent
+                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                        align-middle select-none transition-all duration-300 ease-in bg-transparent
                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                         focus:text-slate-800 dark:focus:text-white">The Marketplace</a>
                         </li>
                         <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md
-                        align-middle select-none font-sans transition-all duration-300 ease-in bg-transparent
+                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                        align-middle select-none transition-all duration-300 ease-in bg-transparent
                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                         focus:text-slate-800 dark:focus:text-white">Enigma Jewellery Designs</a>
                         </li>
                         <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
-                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md
-                        align-middle select-none font-sans transition-all duration-300 ease-in bg-transparent
+                            <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                        align-middle select-none transition-all duration-300 ease-in bg-transparent
                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                         focus:text-slate-800 dark:focus:text-white">Ninja API App</a>
@@ -84,7 +85,7 @@ flex flex-col">
                 rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
                 dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
                 focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
-                        <h3 style="padding-left: 10px">Resume</h3>
+                        <h3 class="font-inconsolata" style="padding-left: 10px">Resume</h3>
                     </a>
                     </li>
                 <li>
@@ -92,60 +93,63 @@ flex flex-col">
                 rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
                 dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
                 focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
-                        <h3 style="padding-left: 10px">Contact</h3>
+                        <h3 class="font-inconsolata" style="padding-left: 10px">Contact</h3>
                     </a>
                 </li>
                 <li><a href="about.html" class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5
                 rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
                 dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
                 focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
-                    <h3 style="padding-left: 10px">About</h3>
+                    <h3 class="font-inconsolata" style="padding-left: 10px">About</h3>
                 </a>
                 </li>
             </ul>
         </nav>
     </aside>
-    <main>
-        <article id="profile">
-            <img src="https://www.placeholder.com/300x300" alt="profile image">
-            <h2>Reina Rowlands</h2>
-            <p>Student / Programmer / Developer</p>
-            <a href="about.html">see more >></a>
+    <main class="row-2 col-2 flex flex-col justify-evenly items-center h-[100%] w-full">
+        <article id="profile" class="flex flex-col justify-center items-center min-h-[auto] ">
+            <img src="https://www.placehold.co/200x200" alt="profile image" class="w-[auto] h-[auto] object-cover rounded-full">
+            <h2 class="text-[#FF852D] font-bold! text-[48px]! font-inconsolata!
+            underline font-stretch-semi-expanded!">Reina Rowlands</h2>
+            <p class="font-inconsolata font-bold font-stretch-semi-expanded text-[#FF852D] text-[32px]!">Student / Programmer / Developer</p>
         </article>
-        <article>
-            <h2>Projects</h2>
-            <button><</button>
-            <ul>
-                <li>
-                    <a>
-                        <img src="assets/img/toy_store.png" alt="Toy store">
-                        <label>Toy Store</label>
+        <article class="flex flex-col w-full justify-center items-center">
+            <h2 class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FF852D] text-[32px]!">Projects</h2>
+            <ul class="flex flex-row gap-x-[10px] justify-center items-center min-h-[auto] w-full px-8!">
+                <li class="flex flex-col items-center justify-between w-[90%] h-[auto]">
+                    <a class="inline-block  h-[100%] max-h-[190px] w-[100%] rounded bg-[url('../img/toy_store.png')]
+                        bg-cover bg-center transition-opacity hover:opacity-80">
+                        <img class="w-0.1 h-0.5 max-h-[180px]!" src="assets/img/toy_store.png" alt="Toy store">
+
                     </a>
+                    <label class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FF852D] text-[20px]!">Toy Store</label>
                 </li>
-                <li>
-                    <a>
-                        <img src="assets/img/the_marketplace.png" alt="The Marketplace">
-                        <label>The Marketplace</label>
+                <li class="flex flex-col items-center justify-between w-[90%] h-[auto] p-2 m-2">
+                    <a class="inline-block  h-[100%] max-h-[190px] w-[100%] rounded bg-[url('../img/the_marketplace.png')]
+                        bg-cover bg-center transition-opacity hover:opacity-80">
+                        <img class="w-0.1 h-0.5 max-h-[180px]!" src="assets/img/the_marketplace.png" alt="The Marketplace">
                     </a>
+                    <label class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FF852D] text-[20px]!">The Marketplace</label>
                 </li>
-                <li>
-                    <a>
-                        <img src="assets/img/enigma_jewellery_designs.png" alt="Enigma Jewellery Designs">
-                        <label>Enigma Jewellery Designs</label>
+                <li class="flex flex-col items-center justify-between w-[90%] h-[auto]">
+                    <a class="inline-block h-[auto] max-h-[190px] w-[100%] rounded bg-[url('../img/enigma_jewellery_designs.png')]
+                        bg-cover bg-center transition-opacity hover:opacity-80">
+                        <img class="w-0.1 h-0.5 max-h-[180px]!" src="assets/img/enigma_jewellery_designs.png" alt="Enigma Jewellery Designs">
                     </a>
+                    <label class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FF852D] text-[18px]!">Enigma Jewellery Designs</label>
                 </li>
-                <li>
-                    <a>
-                        <img src="assets/img/ninja_api_site.png" alt="Ninja Api (Portfolio)">
-                        <label>Ninja Api (Portfolio)</label>
+                <li class="flex flex-col items-center justify-between w-[90%] h-[auto]">
+                    <a class="inline-block  h-[auto] max-h-[190px] w-[100%] rounded bg-[url('../img/ninja_api_site.png')]
+                        bg-cover bg-center transition-opacity hover:opacity-80">
+                        <img class="w-0.1 h-0.5 max-h-[180px]!" src="assets/img/ninja_api_site.png" alt="Ninja Api (Portfolio)">
                     </a>
+                    <label class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FF852D] text-[20px]!">Ninja Api (Portfolio)</label>
                 </li>
             </ul>
-            <button>></button>
         </article>
     </main>
-    <footer>
-        <h3>Copyright Reina Rowlands, 2026</h3>
+    <footer class="row-3 col-span-full h-auto flex flex-row justify-center items-center w-full bg-[#64607F]">
+        <h3 class="font-inconsolata font-stretch-semi-expanded text-[#FFFFFF] text-[18px]!">Copyright<sup>©</sup> Reina Rowlands, 2026</h3>
     </footer>
 </body>
 </html>

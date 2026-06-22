@@ -8,7 +8,10 @@
     } */
 }
 
-@source "./index.html";
-@source "./phase-*/*.html";
+@source "./*.html";
 @source "./assets/img/*.png";
 @source "./assets/img/*.svg";
+
+@theme {
+    --font-inconsolata: "Inconsolata", monospace;
+}
