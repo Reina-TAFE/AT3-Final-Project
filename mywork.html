@@ -7,56 +7,131 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
 </head>
-<body>
-<div id="wrapper">
-    <header>
-        <h1>Reina Rowlands</h1>
-        <nav id="header_nav">
-            <a href="index.html">Home</a>
-            <a href="mywork.html">My Work</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <aside>
-        <nav id="aside_nav">
-            <a href="projects.html">Projects</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </nav>
-        <button id="hide_nav_btn">>></button>
-    </aside>
-    <main>
-        <h2>My Work</h2>
-        <ul>
-            <li>
-                <article>
-                    <h3>Toy Store</h3>
-                    <p>Store Page for a fictional toy store</p>
-                    <img src="assets/img/toy_store.png" alt="Toy Store">
-                </article>
-                <article>
-                    <h3>The Marketplace</h3>
-                    <p>Example website for a furniture store called The Marketplace</p>
-                    <img src="assets/img/the_marketplace.png" alt="The Marketplace">
-                </article>
-                <article>
-                    <h3>Enigma Jewellery Designs</h3>
-                    <p>Storefront website for buying and commissioning custom-made jewellery.</p>
-                    <img src="assets/img/enigma_jewellery_designs.png" alt="Enigma Jewellery Designs">
-                </article>
-                <article>
-                    <h3>Ninja Api App (Portfolio Site)</h3>
-                    <p>A basic web page with 2 APIs</p>
-                    <img src="assets/img/ninja_api_site.png" alt="Ninja Api App (Portfolio Site)">
-                </article>
-            </li>
-        </ul>
-    </main>
-    <footer>
-        <h3>Copyright Reina Rowlands, 2026</h3>
-    </footer>
-</div>
-</body>
+    <body  id="wrapper" class="min-h-screen min-w-screen grid grid-rows-[80px_1fr_10%] grid-cols-[auto_1fr] bg-[#d7d5ff]">
+        <header class="row-1 col-span-full h-auto flex md:flex-row justify-between bg-[#190074]">
+            <h1 class="text-xl font-bold font-inconsolata text-[#ffffff]">Reina Rowlands</h1>
+            <nav id="header_nav" class="flex md-flex-col justify-evenly">
+                <a href="index.html " class="text-l font-bold text-[#ffffff]">|| Home |</a>
+                <a href="mywork.html" class="text-l font-bold text-[#ffffff]">| My Work |</a>
+                <a href="about.html" class="text-l font-bold text-[#ffffff]">| About |</a>
+                <a href="contact.html" class="text-l font-bold text-[#ffffff]">| Contact ||</a>
+            </nav>
+        </header>
+        <aside id="side_panel" class="row-2 col-0 w-64 bg-[#271D4B] text-white transition-all duration-300 border shadow-sm border-slate-200 shadow-slate-950/5
+        flex flex-col">
+            <section class="p-4 flex justify-between items-center">
+                <h2 id="aside_title" class="font-inconsolata antialiased text-base font-semibold text-white">
+                    AT3 Final Project:<br>
+                    Portfolio
+                </h2>
+                <button id="collapse-btn" class="p-1 h-8 w-8 rounded-md !bg-[#E25600] hover:bg-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                </button>
+            </section>
+            <nav id="aside_nav" class="mt-5 px-2">
+                <ul class="space-y-1 flex flex-col gap-0.75">
+                    <li class="space-y-1 bg-[#6D5AAE] rounded-md hover:bg-gray-700 hover:text-white pointer-events-auto">
+                        <button id="projectsBtn_side" class="dropdown-btn w-full flex items-center justify-between
+                            font-medium rounded-md text-gray-300 hover:bg-gray-700 hover:text-white bg-[#6D5AAE] space-y-1"
+                        >
+                            <label class="sidebar-text font-inconsolata" style="padding-left: 10px">Projects</label>
+                            <svg class="ml-auto h-5 w-5 transform transition-transform duration-200"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1
+                                      0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <ul id="sidebarCollapseList" class="dropdown-content hidden p-[2px] space-y-1 bg-[#271D4B]">
+                            <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
+                                <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                                text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
+                                hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
+                                focus:text-slate-800 dark:focus:text-white">Toy Store</a>
+                            </li>
+                            <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
+                                <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                                align-middle select-none transition-all duration-300 ease-in bg-transparent
+                                text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
+                                hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
+                                focus:text-slate-800 dark:focus:text-white">The Marketplace</a>
+                            </li>
+                            <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
+                                <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                                align-middle select-none transition-all duration-300 ease-in bg-transparent
+                                text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
+                                hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
+                                focus:text-slate-800 dark:focus:text-white">Enigma Jewellery Designs</a>
+                            </li>
+                            <li class="bg-[#6D5AAE] space-y-1 rounded-md m-0.75">
+                                <a href="#" class="group flex items-center px-2 py-2 text-sm font-inconsolata font-medium rounded-md
+                                align-middle select-none transition-all duration-300 ease-in bg-transparent
+                                text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
+                                hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
+                                focus:text-slate-800 dark:focus:text-white">Ninja API App</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="resume.html" class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
+                            <h3 class="font-inconsolata" style="padding-left: 10px">Resume</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
+                            <h3 class="font-inconsolata" style="padding-left: 10px">Contact</h3>
+                        </a>
+                    </li>
+                    <li><a href="about.html" class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white bg-[#6D5AAE]">
+                        <h3 class="font-inconsolata" style="padding-left: 10px">About</h3>
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2>My Work</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Toy Store</h3>
+                        <p>Store Page for a fictional toy store</p>
+                        <img src="assets/img/toy_store.png" alt="Toy Store">
+                    </article>
+                    <article>
+                        <h3>The Marketplace</h3>
+                        <p>Example website for a furniture store called The Marketplace</p>
+                        <img src="assets/img/the_marketplace.png" alt="The Marketplace">
+                    </article>
+                    <article>
+                        <h3>Enigma Jewellery Designs</h3>
+                        <p>Storefront website for buying and commissioning custom-made jewellery.</p>
+                        <img src="assets/img/enigma_jewellery_designs.png" alt="Enigma Jewellery Designs">
+                    </article>
+                    <article>
+                        <h3>Ninja Api App (Portfolio Site)</h3>
+                        <p>A basic web page with 2 APIs</p>
+                        <img src="assets/img/ninja_api_site.png" alt="Ninja Api App (Portfolio Site)">
+                    </article>
+                </li>
+            </ul>
+        </main>
+        <footer class="row-3 col-span-full h-auto flex flex-row justify-center items-center w-full bg-[#64607F]">
+            <h3 class="font-inconsolata font-stretch-semi-expanded text-[#FFFFFF] text-[18px]!">Copyright<sup>©</sup> Reina Rowlands, 2026</h3>
+        </footer>
+    </body>
 </html>
