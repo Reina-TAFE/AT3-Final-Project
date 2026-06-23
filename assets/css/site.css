@@ -549,6 +549,9 @@
   .mx-2\! {
     margin-inline: calc(var(--spacing) * 2) !important;
   }
+  .mx-4\! {
+    margin-inline: calc(var(--spacing) * 4) !important;
+  }
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
   }
@@ -786,6 +789,12 @@
   .w-full\! {
     width: 100% !important;
   }
+  .w-screen {
+    width: 100vw;
+  }
+  .w-screen\! {
+    width: 100vw !important;
+  }
   .max-w-\[50\%\] {
     max-width: 50%;
   }
@@ -830,6 +839,9 @@
   }
   .min-w-screen {
     min-width: 100vw;
+  }
+  .min-w-screen\! {
+    min-width: 100vw !important;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
