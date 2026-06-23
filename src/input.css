@@ -8,6 +8,11 @@
     } */
 }
 
+@utility text-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 @source "./*.html";
 @source "./assets/img/*.png";
 @source "./assets/img/*.svg";
