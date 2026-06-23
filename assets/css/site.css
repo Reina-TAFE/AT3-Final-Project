@@ -687,8 +687,14 @@
   .w-\[60\%\] {
     width: 60%;
   }
+  .w-\[60\%\]\! {
+    width: 60% !important;
+  }
   .w-\[66\%\] {
     width: 66%;
+  }
+  .w-\[70\%\]\! {
+    width: 70% !important;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -713,6 +719,9 @@
   }
   .w-auto {
     width: auto;
+  }
+  .w-auto\! {
+    width: auto !important;
   }
   .w-full {
     width: 100%;
