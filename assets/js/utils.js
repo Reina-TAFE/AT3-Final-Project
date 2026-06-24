@@ -1,4 +1,3 @@
-
 function toggleSideNav(){
     const asideTitle = document.getElementById("aside_title")
     const hideBtn = document.getElementById("collapse-btn")

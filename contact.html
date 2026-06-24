@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="assets/css/site.css">
-    <script src="./assets/js/utils.js"></script>
+<!--    <script src="./assets/js/utils.js"></script>-->
+    <script type="module" src="./assets/js/main.js"></script>
 </head>
     <body id="wrapper"
       class="min-h-screen max-w-screen! grid grid-rows-[80px_1fr_10%] grid-cols-[auto_1fr] bg-[#d7d5ff]">
@@ -171,28 +172,32 @@
                 </section>
             </div>
 
-            <form class="flex flex-col w-[25%]! h-auto! bg-[#7862CD]! border-1! rounded-xl! border-black my-7!">
-                <fieldset class="flex flex-col justify-items-start items-start! w-full h-full p-3! px-[5%]!">
+            <form id="contact_form" action="#" method="post"
+                  class="flex flex-col w-[25%]! h-auto! bg-[#7862CD]! border-1! rounded-xl! border-black my-7!">
+                <fieldset class="flex flex-col justify-items-start items-start! w-full! h-full p-3! px-[5%]!">
                     <h3 class="font-inconsolata font-bold! font-stretch-semi-expanded text-[#FFFFFF]
                     text-[32px]! self-center underline!">Contact Me</h3>
                     <p class="text-red-600 text-[14px]! px-2"><sup>*</sup> fields are required</p>
                     <div class="w-full! px-10! pb-1! flex flex-row justify-between items-center">
-                        <label for="firstName" class="text-white!"><sup class="text-red-600">* </sup>Name:</label>
-                        <input type="text" name="firstName" id="firstName" class="w-[170px]! h-[24px]! bg-white! border-1!
+                        <label for="name" class="text-white!"><sup class="text-red-600">* </sup>Name:</label>
+                        <input type="text" name="name" id="name" class="w-[60%]! h-[24px]! bg-white! border-1!
                         border-black! rounded-md!">
                     </div>
                     <div class="w-full! px-10! pb-2! flex flex-row justify-between items-center">
                         <label for="email" class="text-white!"><sup class="text-red-600">* </sup>Email:</label>
-                        <input type="email" name="email" id="email" class="w-[170px]! h-[24px]! bg-white! border-1!
+                        <input type="email" name="email" id="email" class="w-[60%]! h-[24px]! bg-white! border-1!
                         border-black! rounded-md!">
                     </div>
                     <div class="w-full! px-10! pb-1! flex flex-col justify-start items-start">
                         <label for="message" class="text-white!"><sup class="text-red-600">* </sup>Message:</label>
-                        <input type="text" name="message" id="message" class="w-[300px]! h-[150px]! bg-white! border-1!
+                        <input type="text" name="message" id="message" class="w-full! h-[150px]! bg-white! border-1!
                         border-black! rounded-md!">
                     </div>
-                    <button type="submit" id="submit" class="inline-block! mx-10! h-8! w-18! bg-green-500! border-1!
-                    border-black!">Submit</button>
+                    <section class="flex flex-row justify-start items-center px-10! gap-2">
+                        <input type="submit" id="submit" class="inline-block!  h-8! w-18! bg-green-500! border-1!
+                        border-black! rounded-md!" value="Submit">
+                        <h4 id="error_msg" class="hidden text-red-600 font-medium!">X Example error message</h4>
+                    </section>
                 </fieldset>
             </form>
         </main>
