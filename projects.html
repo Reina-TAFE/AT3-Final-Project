@@ -9,150 +9,150 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <script src="./assets/js/main.js"></script>
 </head>
-    <body id="wrapper"
-      class="min-h-screen max-w-screen! grid grid-rows-[80px_1fr_10%] grid-cols-[auto_1fr] bg-[#d7d5ff]">
-        <header class="row-1 col-span-full! h-[100%] flex md:flex-row justify-between bg-[#190074] px-4!">
-            <h1 class="text-[40px]! font-medium! font-inconsolata! font-stretch-expanded!
-                        text-[#ffffff]">Reina Rowlands</h1>
-            <nav id="header_nav" class="flex md-flex-row justify-center w-[30%] gap-x-5 pt-[10px]!">
-                <a href="index.html ">
-                    <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
-                                text-[#ffffff]! underline">Home</p>
-                </a>
-                <a href="mywork.html">
-                    <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
-                                text-[#ffffff]! underline">My Work</p>
-                </a>
-                <a href="about.html">
-                    <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
-                                text-[#ffffff]! underline">About</p>
-                </a>
-                <a href="contact.html">
-                    <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
-                                text-[#ffffff]! underline">Contact</p>
-                </a>
-            </nav>
-        </header>
-        <aside id="side_panel"
-               class="row-2 col-0 w-64 bg-[#271D4B] text-white transition-all duration-300 border
-                    shadow-sm border-slate-200 shadow-slate-950/5 flex flex-col">
-            <section class=" flex justify-between items-center">
-                <h2 id="aside_title"
-                    class="font-inconsolata antialiased text-left! text-[24px] font-semibold text-white underline! py-4! pl-3!">
-                    AT3 Final Project:<br>
-                    Portfolio
-                </h2>
-                <button id="collapse-btn"
-                        class="m-2! p-1 h-8 w-8 rounded-md! !bg-[#E25600] hover:bg-gray-700 focus:outline-none self-baseline!">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         class="h-6 w-6 justify-self-center! self-center!"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke="currentColor">
-                        <path stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
-                    </svg>
-                </button>
-            </section>
-            <nav id="aside_nav"
-                 class="mt-5 px-2">
-                <ul class="space-y-1 flex flex-col gap-0.75 bg-[#271D4B]">
-                    <li class="dropdown-btn w-full h-full! hover:text-white transition-all! duration-300! ease-in!
+<body id="wrapper"
+      class="min-h-screen max-w-screen! flex flex-col md:grid md:grid-rows-[80px_1fr_10%] md:grid-cols-[auto_1fr] bg-[#d7d5ff]">
+    <header class="row-1 col-span-full h-[100%] flex flex-col md:flex-row justify-between bg-[#190074] px-4!">
+        <h1 class="text-[40px]! font-medium! font-inconsolata! font-stretch-expanded!
+                            text-[#ffffff]">Reina Rowlands</h1>
+        <nav id="header_nav" class="flex md-flex-row justify-center md:w-[30%] gap-x-2 md:gap-x-5 pt-[10px]!">
+            <a href="index.html ">
+                <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
+                                    text-[#ffffff]! underline">Home</p>
+            </a>
+            <a href="mywork.html">
+                <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
+                                    text-[#ffffff]! underline">My Work</p>
+            </a>
+            <a href="about.html">
+                <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
+                                    text-[#ffffff]! underline">About</p>
+            </a>
+            <a href="contact.html">
+                <p class="font-medium! font-inconsolata! font-stretch-semi-expandedtext-l text-[24px]!
+                                    text-[#ffffff]! underline">Contact</p>
+            </a>
+        </nav>
+    </header>
+    <aside id="side_panel"
+       class="hidden row-2 col-0 w-64 bg-[#271D4B] text-white transition-all duration-300 border
+                    shadow-sm border-slate-200 shadow-slate-950/5 md:flex flex-col">
+    <section class=" flex justify-between items-center">
+        <h2 id="aside_title"
+            class="font-inconsolata antialiased text-left! text-[24px] font-semibold text-white underline! py-4! pl-3!">
+            AT3 Final Project:<br>
+            Portfolio
+        </h2>
+        <button id="collapse-btn"
+                class="m-2! p-1 h-8 w-8 rounded-md! !bg-[#E25600] hover:bg-gray-700 focus:outline-none self-baseline!">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="h-6 w-6 justify-self-center! self-center!"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+            </svg>
+        </button>
+    </section>
+    <nav id="aside_nav"
+         class="mt-5 px-2">
+        <ul class="space-y-1 flex flex-col gap-0.75 bg-[#271D4B]">
+            <li class="dropdown-btn w-full h-full! hover:text-white transition-all! duration-300! ease-in!
                         pointer-events-auto">
-                        <button id="projectsBtn_side"
-                                class="w-full h-full flex items-center justify-between min-w-60 cursor-pointer
+                <button id="projectsBtn_side"
+                        class="w-full h-full flex items-center justify-between min-w-60 cursor-pointer
                                     py-1.5 px-2.5 bg-[#6D5AAE]! rounded-md! align-middle transition-all! duration-300 ease-in
                                     text-white hover:text-slate-800! dark:text-slate-300 dark:hover:text-white
                                     hover:bg-slate-200! dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                                      focus:text-slate-800 dark:focus:text-white">
                             <span class="sidebar-text font-inconsolata"
-                                   style="padding-left: 10px">Projects</span>
-                            <svg class="ml-auto h-5 w-5 transition-transform! duration-200! ease-in-out focus:rotate-90"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1
+                                  style="padding-left: 10px">Projects</span>
+                    <svg class="ml-auto h-5 w-5 transition-transform! duration-200! ease-in-out focus:rotate-90"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1
                                           0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"/>
-                            </svg>
-                        </button>
-                        <ul id="sidebarCollapseList"
-                            class="dropdown-content hidden w-[90%]! pt-0.75! px-2! gap-0.5! justify-self-end bg-[#271D4B]">
-                            <li class="bg-[#6D5AAE] rounded-md h-full">
-                                <a href="#"
-                                   class="group flex items-center px-2! py-1! text-sm font-inconsolata! font-medium rounded-md
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+                <ul id="sidebarCollapseList"
+                    class="dropdown-content hidden w-[90%]! pt-0.75! px-2! gap-0.5! justify-self-end bg-[#271D4B]">
+                    <li class="bg-[#6D5AAE] rounded-md h-full">
+                        <a href="#"
+                           class="group flex items-center px-2! py-1! text-sm font-inconsolata! font-medium rounded-md
                                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                                         focus:text-slate-800 dark:focus:text-white">Toy Store</a>
-                            </li>
-                            <li class="bg-[#6D5AAE] rounded-md h-full">
-                                <a href="#"
-                                   class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
+                    </li>
+                    <li class="bg-[#6D5AAE] rounded-md h-full">
+                        <a href="#"
+                           class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
                                         align-middle select-none transition-all duration-300 ease-in bg-transparent
                                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                                         hover:bg-slate-200 dark:hover:bg-slate-700 focus:bg-slate-200 dark:focus:bg-slate-700
                                         focus:text-slate-800 dark:focus:text-white">The Marketplace</a>
-                            </li>
-                            <li class="bg-[#6D5AAE] rounded-md h-full">
-                                <a href="#"
-                                   class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
+                    </li>
+                    <li class="bg-[#6D5AAE] rounded-md h-full">
+                        <a href="#"
+                           class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
                                         align-middle select-none transition-all duration-300 ease-in bg-transparent
                                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                                         hover:bg-slate-200 dark:hover:bg-slate-700 0 dark:focus:bg-slate-700
                                         focus:text-slate-800 focus:bg-slate-20 dark:focus:text-white">Enigma Jewellery Designs</a>
-                            </li>
-                            <li class="bg-[#6D5AAE] rounded-md h-full">
-                                <a href="#"
-                                   class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
+                    </li>
+                    <li class="bg-[#6D5AAE] rounded-md h-full">
+                        <a href="#"
+                           class="group flex items-center px-2! py-1! text-sm font-inconsolata font-medium rounded-md
                                         align-middle select-none transition-all duration-300 ease-in bg-transparent
                                         text-white hover:text-slate-800 dark:text-slate-300 dark:hover:text-white
                                         hover:bg-slate-200 dark:hover:bg-slate-700 dark:focus:bg-slate-700
                                         focus:text-slate-800 focus:bg-slate-200 dark:focus:text-white">Ninja API App</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="resume.html"
-                           class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
-                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
-                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
-                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
-                            <h3 class="font-inconsolata"
-                                style="padding-left: 10px">Resume</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html"
-                           class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
-                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
-                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
-                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
-                            <h3 class="font-inconsolata"
-                                style="padding-left: 10px">Contact</h3>
-                        </a>
-                    </li>
-                    <li><a href="about.html"
-                           class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
-                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
-                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
-                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
-                        <h3 class="font-inconsolata"
-                            style="padding-left: 10px">About</h3>
-                    </a>
                     </li>
                 </ul>
-            </nav>
-        </aside>
-        <main class="row-2 col-2 flex flex-col justify-center items-center h-[100%]! w-full! gap-5 p-10! px-[15%]">
+            </li>
+            <li>
+                <a href="resume.html"
+                   class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
+                    <h3 class="font-inconsolata"
+                        style="padding-left: 10px">Resume</h3>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html"
+                   class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
+                    <h3 class="font-inconsolata"
+                        style="padding-left: 10px">Contact</h3>
+                </a>
+            </li>
+            <li><a href="about.html"
+                   class="flex items-center justify-between min-w-60 cursor-pointer py-1.5 px-2.5 bg-[#6D5AAE]
+                        rounded-md align-middle transition-all duration-300 ease-in text-white hover:text-slate-800
+                        dark:text-slate-300 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700
+                        focus:bg-slate-200 dark:focus:bg-slate-700 focus:text-slate-800 dark:focus:text-white">
+                <h3 class="font-inconsolata"
+                    style="padding-left: 10px">About</h3>
+            </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+        <main class="md:row-2 md:col-2 flex flex-col justify-center items-center h-[100%]! w-full! gap-5 p-10! px-[15%]">
             <h2 class="text-[#FF852D] font-bold! text-[48px]! font-inconsolata! text-stroke!
             underline font-stretch-semi-expanded!">Projects</h2>
-            <ul class="h-full! w-[70%]! flex md:flex-col justify-evenly items-center gap-5">
+            <ul class="h-full! md:w-[70%]! flex flex-col justify-evenly items-center gap-5">
                 <li class="w-full! h-full! border-1 border-black flex md:flex-row justify-evenly gap-0">
-                    <div id="enigma_designs" class="flex flex-row items-center justify-center
+                    <div id="enigma_designs" class="flex flex-col md:flex-row items-center justify-center
                             border-1! rounded-xl! border-black w-full! h-full!">
                         <a href="index.html" class="inline-block h-60! w-full! rounded-l-xl bg-[url('../img/enigma_jewellery_designs.png')]
                                 bg-cover bg-center transition-opacity hover:opacity-80">
@@ -169,7 +169,7 @@
                     </div>
                 </li>
                 <li class=" w-full! h-full! border-1 border-black flex md:flex-row justify-evenly gap-0">
-                    <div id="ninja_app" class="flex flex-row items-center justify-center w-full! h-full!
+                    <div id="ninja_app" class="flex flex-col md:flex-row items-center justify-center w-full! h-full!
                 border-1! rounded-xl! border-black">
                         <a href="index.html" class="inline-block h-60! w-full rounded-l-xl bg-[url('../img/toy_store.png')]
                                 bg-cover bg-center transition-opacity hover:opacity-80">
@@ -187,7 +187,7 @@
                     </div>
                 </li>
                 <li class="w-full! h-full! border-1 border-black flex md:flex-row justify-evenly gap-0">
-                    <div id="the_marketplace" class="border-1! rounded-xl! border-black flex md:flex-row justify-evenly gap-0">
+                    <div id="the_marketplace" class="border-1! rounded-xl! border-black flex flex-col md:flex-row justify-evenly gap-0">
                         <a href="index.html" class="inline-block h-60 w-full rounded-l-xl bg-[url('../img/the_marketplace.png')]
                                 bg-cover bg-center transition-opacity hover:opacity-80">
                             <span class="relative w-full h-full inset-0 flex items-center justify-center bg-black/50
@@ -204,7 +204,7 @@
                     </div>
                 </li>
                 <li class="w-full! h-full! border-1 border-black flex md:flex-row justify-evenly gap-0">
-                    <div id="toy_store" class="border-1! rounded-xl! border-black flex md:flex-row justify-evenly gap-0">
+                    <div id="toy_store" class="border-1! rounded-xl! border-black flex flex-col md:flex-row justify-evenly gap-0">
                         <a href="index.html" class="inline-block h-60 w-full bg-[url('../img/toy_store.png')]
                                 bg-cover bg-center transition-opacity hover:opacity-80 rounded-l-xl">
                             <span class="relative w-full h-full inset-0 flex items-center justify-center bg-black/50
